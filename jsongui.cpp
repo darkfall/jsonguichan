@@ -1,7 +1,8 @@
 //
 //  XmlGui - json parsing class for guichan (http://guichan.sourceforge.net), use jsoncpp for parse json script (http://jsoncpp.sourceforge.net).
 //  author - darkfall (darkfall3@gmail.com)
-//
+//  website - https://github.com/darkfall/jsonguichan or http://code.google.com/p/jsonguichan/
+//  blog - http://www.gamemastercn.com
 //
 //  jsongui.cpp
 //  Sora

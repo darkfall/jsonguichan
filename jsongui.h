@@ -1,6 +1,8 @@
 //
 //  JsonGui - json parsing class for guichan (http://guichan.sourceforge.net), use jsoncpp for parse json script (http://jsoncpp.sourceforge.net).
 //  author - darkfall (darkfall3@gmail.com)
+//  website - https://github.com/darkfall/jsonguichan or http://code.google.com/p/jsonguichan/
+//  blog - http://www.gamemastercn.com
 //  example:
 //     gcn::JsonGui* pGuiParser = new gcn::JsonGui;
 //     pGuiParser->parse("myjsongui.json");
@@ -24,11 +26,6 @@
 #include <map>
 
 namespace gcn {
-    /* 
-     a json gui widget reader for soraguichan
-     support external functions
-     */
-    
     class JsonGui;
     typedef void (*JsonGuiParseFunc)(const Json::Value& val, gcn::Widget* parent, JsonGui* pCaller);
     
@@ -112,7 +109,7 @@ namespace gcn {
 		virtual std::string getElementAt(int i) { 
 			if(i < items.size())
 				return items[i];
-			return "null";
+			return "\0";
 		}
         virtual void removeElementAt(int i) {
             if(i < items.size()) {

@@ -1,0 +1,11 @@
+JsonGui - json parsing class for guichan (http://guichan.sourceforge.net), use jsoncpp for parse json script (http://jsoncpp.sourceforge.net).
+author - darkfall (darkfall3@gmail.com)
+Copyright (C) 2011 Ruiwei Bu
+
+example:
+	gcn::JsonGui* pGuiParser = new gcn::JsonGui;
+	pGuiParser->parse("myjsongui.json");
+	global_gui->add(pGuiParser->getWidget("myWindow"))
+     
+
+see example.json for jsongui format example
